@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experience</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 80px;
+  border-bottom:1px solid #ddd;
+}
+.navbar a{
+  margin-left:25px;
+  text-decoration:none;
+  color:black;
+}
+
+/* EXPERIENCE SECTION */
+.experience{
+  padding:80px 120px;
+}
+
+/* TITLE */
+.title{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:100px;
+}
+.title .line{
+  width:180px;
+  height:1px;
+  background:#000;
+}
+.title h2{
+  margin:0 25px;
+  font-size:26px;
+  font-weight:500;
+}
+
+/* JOB LAYOUT */
+.job-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items:center;
+}
+
+/* LEFT SIDE */
+.job-left{
+  text-align:right;
+  padding-right:60px;
+  position:relative;
+}
+.job-left::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:1px;
+  height:100%;
+  background:#888;
+}
+
+/* RIGHT SIDE */
+.job-right{
+  padding-left:60px;
+}
+.job-right ul{
+  margin:0;
+  padding-left:20px;
+}
+.job-right li{
+  margin-bottom:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <b>R</b>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    
+    <a href="project.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="experience">
+
+  <div class="title">
+    <div class="line"></div>
+    <h2>Experience</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="job-row">
+
+    <!-- LEFT -->
+    <div class="job-left">
+      <h3>MERN Stack Developer Intern</h3>
+      <p>Engeniuspark Technologies Pvt Ltd</p>
+      <small>2026 – Present</small>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="job-right">
+      <ul>
+        <li>Working on frontend using HTML, CSS, JavaScript and React</li>
+        <li>Building responsive and user-friendly interfaces</li>
+        <li>Assisting in backend development using Node.js and MySQL</li>
+        <li>Learning real-world project structure and teamwork</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
